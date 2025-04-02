@@ -1,4 +1,4 @@
-
+import java.util.HashMap;
 /**
  * Write a description of class Cities here.
  *
@@ -7,27 +7,15 @@
  */
 public class Cities
 {
-    // instance variables - replace the example below with your own
-    private int x;
-
-    /**
-     * Constructor for objects of class Cities
-     */
-    public Cities()
-    {
-        // initialise instance variables
-        x = 0;
-    }
-
-    /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
+    public static void main(String[] args) {
+        HashMap<String, String> capCities = new HashMap<String, String>();
+        capCities.put("New Zealand", "Wellington");
+        capCities.put("Australia", "Canberra");
+        capCities.put("GRM", "Berlin");
+        capCities.put("Norway", "Oslo");
+        capCities.put("USA", "Washington");
+        
+        System.out.println(capCities);
+        System.out.println(capCities.get("New Zealand"));
     }
 }
